@@ -8,7 +8,7 @@ namespace Game.Scripts
 
         [Header("Options")] [SerializeField] private float speed;
 
-        void Start() => _transform = GetComponent<Transform>();
+        private void Start() => _transform = GetComponent<Transform>();
 
         private void Update()
         {
