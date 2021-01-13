@@ -9,9 +9,6 @@ namespace Game.Scripts
         [Header("Options")] [SerializeField] private float speed;
         public static bool IsRight = true;
 
-        [Header("Triggers")] [SerializeField] private BoxCollider right;
-        [SerializeField] private BoxCollider left;
-
         private void Start() => _transform = GetComponent<Transform>();
 
         private void Update()

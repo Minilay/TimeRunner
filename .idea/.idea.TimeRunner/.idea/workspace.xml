@@ -20,15 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3618862e-ed98-4d74-814f-b2f5d862a5fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Car(BlockOut).prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Car(BlockOut).prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Car.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Car.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Obstacle.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Obstacle.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TimeRunner/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TimeRunner/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TimeRunner/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TimeRunner/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TimeRunner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TimeRunner/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Car.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Car.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +38,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Game/Scripts/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Game/Scripts/Car.cs" />
         <option value="$PROJECT_DIR$/Assets/Game/Scripts/Obstacle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game/Scripts/Car.cs" />
       </list>
     </option>
   </component>
@@ -96,7 +88,7 @@
       <updated>1610465240104</updated>
       <workItem from="1610465313079" duration="236000" />
       <workItem from="1610465753183" duration="2499000" />
-      <workItem from="1610498212209" duration="10193000" />
+      <workItem from="1610498212209" duration="10573000" />
     </task>
     <servers />
   </component>
