@@ -11,6 +11,7 @@
             <e p="Car.cs" t="Include" />
             <e p="Obstacle.cs" t="Include" />
             <e p="Player.cs" t="Include" />
+            <e p="TimeSystem.cs" t="Include" />
           </e>
         </e>
       </e>
