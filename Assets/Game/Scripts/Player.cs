@@ -11,7 +11,7 @@ namespace Game.Scripts
 
         void Start() => _transform = GetComponent<Transform>();
 
-            void Update()
+        private void Update()
         {
             Move();
         }
