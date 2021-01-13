@@ -5,9 +5,8 @@ namespace Game.Scripts
     public class Player : MonoBehaviour
     {
         private Transform _transform;
-        
-        [Header("Options")]
-        [SerializeField] private float speed;
+
+        [Header("Options")] [SerializeField] private float speed;
 
         void Start() => _transform = GetComponent<Transform>();
 
