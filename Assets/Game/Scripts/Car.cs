@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Game.Scripts
 {
@@ -8,7 +9,7 @@ namespace Game.Scripts
         private Transform _transform;
         
         [Header("Options")] [SerializeField] private float speed;
-        private bool _isRight = true;
+        public bool isRight = true;
 
         private void Start() => _transform = GetComponent<Transform>();
 
@@ -20,7 +21,7 @@ namespace Game.Scripts
 
         private void Move()
         {
-            if (_isRight)
+            if (isRight)
                 _transform.Translate(Vector3.left * (speed * Time.deltaTime));
             else
                 _transform.Translate(Vector3.right * (speed * Time.deltaTime));
