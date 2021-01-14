@@ -4,8 +4,8 @@ namespace Game.Scripts
 {
     public class TimeSystem : MonoBehaviour
     {
-        public float slowFactor = 0.05f;
-        public float slowLenght = 2f;
+        [SerializeField] private float slowFactor = 0.05f;
+        [SerializeField] private float slowLenght = 2f;
 
         private void Update() => Normalise(slowLenght);
 

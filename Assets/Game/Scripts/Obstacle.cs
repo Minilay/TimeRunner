@@ -1,47 +1,43 @@
 ﻿using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Game.Scripts
 {
     public class Obstacle : MonoBehaviour
     {
-        [Header("Options")] [SerializeField] private Transform startPositionRight;
+        [Header("Options")]
+        [SerializeField] private GameObject firstCar;
+        [SerializeField] private GameObject secondCar;
+        [SerializeField] private float timeOfSpawns;
+        [SerializeField] private Transform startPositionRight;
         [SerializeField] private Transform startPositionLeft;
-        [SerializeField] private GameObject car;
-        [SerializeField] private float timer;
+        
         private float _nextSpawnTime;
 
         private void Update()
         {
             _nextSpawnTime += Time.deltaTime;
 
-            if (!(timer < _nextSpawnTime)) return;
-            Spawn(car, startPositionRight, startPositionLeft);
+            if (!(timeOfSpawns < _nextSpawnTime)) return;
+            Spawn(firstCar.gameObject, secondCar, startPositionRight, startPositionLeft);
             _nextSpawnTime = 0;
         }
 
-        //Bug when more than one car (so one by one)
-        private void Spawn(GameObject obstacle, Transform position, Transform secondPosition)
+        private void Spawn(GameObject obstacle, GameObject secondObstacle, Transform position, Transform secondPosition)
         {
-            if (Car.IsRight)
-            {
-                var obstaclePosition = position.position;
-                Instantiate(obstacle, new Vector3(obstaclePosition.x,
-                        obstaclePosition.y,
-                        obstaclePosition.z),
-                    Quaternion.identity);
+            var firstPointPosition = position.position;
+            var secondPointPosition = secondPosition.position;
+            
+            //Code smell :c 
+            Instantiate(obstacle, new Vector3(firstPointPosition.x,
+                    firstPointPosition.y,
+                    firstPointPosition.z),
+                Quaternion.identity);
 
-                Car.IsRight = false;
-            }
-            else
-            {
-                var obstaclePosition = secondPosition.position;
-                Instantiate(obstacle, new Vector3(obstaclePosition.x,
-                        obstaclePosition.y,
-                        obstaclePosition.z),
-                    Quaternion.identity);
-
-                Car.IsRight = true;
-            }
+            Instantiate(secondObstacle, new Vector3(secondPointPosition.x,
+                    secondPointPosition.y,
+                    secondPointPosition.z),
+                Quaternion.identity);
         }
     }
 }

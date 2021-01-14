@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9065157460272153504}
   - component: {fileID: -8156435496753056034}
   m_Layer: 0
-  m_Name: Car(BlockOut)
+  m_Name: Car(BlockOut) right
   m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,6 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
+  isRight: 1
 --- !u!54 &-8156435496753056034
 Rigidbody:
   m_ObjectHideFlags: 0

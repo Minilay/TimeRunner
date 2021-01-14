@@ -17,10 +17,7 @@ namespace Game.Scripts
             OnTimeControl();
         }
 
-        private void Move()
-        {
-            _transform.Translate(Vector3.forward * (speed * Time.deltaTime));
-        }
+        private void Move() => _transform.Translate(Vector3.forward * (speed * Time.deltaTime));
 
         private void OnTimeControl()
         {
